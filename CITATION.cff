@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: "Shao"
+    given-names: "Shoupeng"
+    alias: "魔法徽章"
+title: "SUI: Semantic Unified Interface — A Semantic Encoding Protocol for Large Language Models"
+version: 6.7
+date-released: "2026-08-27"
+url: "https://gitee.com/mofahuizhang/SUI"
+license:
+  - "MulanPSL-2.0"
+  - "CC-BY-NC-4.0"
+abstract: "SUI (Semantic Unified Interface) is a formal semantic encoding protocol designed with large language models as the primary reader. It inserts a layer of formalized semantic addresses between natural language and model inference, enabling precise concept addressing rather than probabilistic disambiguation. SUI is grounded in the CART/CCT/CSMT tri-framework and maintains a hard-encoding/soft-routing relationship with SCION."
+keywords:
+  - "semantic encoding"
+  - "large language models"
+  - "semantic addressing"
+  - "cognitive coding theory"
+  - "AI intermediate representation"
+  - "context state"
+  - "semantic phase dynamics"

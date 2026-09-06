@@ -1,0 +1,297 @@
+{
+  "meta": {
+    "name": "SUI-Gold Cold-Start Seed",
+    "bind": "SUI v4.6 §6.1 SUI基准与验证体系（冷启动占位，非专家Gold）",
+    "provenance": "auto_synth",
+    "is_expert_gold": false,
+    "expert_target": {
+      "基础层": 500,
+      "层累层": 2000,
+      "歧义层": 1000
+    },
+    "note": "本数据集仅供编译器/评估流程冷启动跑通；须经双/三/五专家CDC蒸馏后方可称为 SUI-Gold 真值集。"
+  },
+  "base": [
+    {
+      "text": "水是一种无色无味的液体物质",
+      "concept": "水",
+      "sui_triple": {
+        "primitive_ids": [
+          "S01",
+          "N01",
+          "B43"
+        ],
+        "accretion_id": "n1",
+        "context_node_id": "n1",
+        "context": "水是一种无色无味的液体物质",
+        "period": "共时",
+        "confidence": "auto",
+        "is_expert_gold": false
+      },
+      "needs_expert_review": true
+    },
+    {
+      "text": "火是燃烧产生的光与热现象",
+      "concept": "火",
+      "sui_triple": {
+        "primitive_ids": [
+          "S02",
+          "V33"
+        ],
+        "accretion_id": "n1",
+        "context_node_id": "n1",
+        "context": "火是燃烧产生的光与热现象",
+        "period": "共时",
+        "confidence": "auto",
+        "is_expert_gold": false
+      },
+      "needs_expert_review": true
+    },
+    {
+      "text": "人是有理性的社会动物",
+      "concept": "人",
+      "sui_triple": {
+        "primitive_ids": [
+          "R09",
+          "V46"
+        ],
+        "accretion_id": "n1",
+        "context_node_id": "n1",
+        "context": "人是有理性的社会动物",
+        "period": "共时",
+        "confidence": "auto",
+        "is_expert_gold": false
+      },
+      "needs_expert_review": true
+    },
+    {
+      "text": "天是头顶上方的空间与自然界",
+      "concept": "天",
+      "sui_triple": {
+        "primitive_ids": [
+          "S06",
+          "B01",
+          "S39",
+          "V38",
+          "Z17",
+          "R07",
+          "S07"
+        ],
+        "accretion_id": "n1",
+        "context_node_id": "n1",
+        "context": "天是头顶上方的空间与自然界",
+        "period": "共时",
+        "confidence": "auto",
+        "is_expert_gold": false
+      },
+      "needs_expert_review": true
+    },
+    {
+      "text": "道是老子哲学中的宇宙本原与规律",
+      "concept": "道",
+      "sui_triple": {
+        "primitive_ids": [
+          "S34",
+          "V54"
+        ],
+        "accretion_id": "n1",
+        "context_node_id": "n1",
+        "context": "道是老子哲学中的宇宙本原与规律",
+        "period": "共时",
+        "confidence": "auto",
+        "is_expert_gold": false
+      },
+      "needs_expert_review": true
+    }
+  ],
+  "accretion": [
+    {
+      "concept": "德",
+      "k": 4,
+      "sui_triples": [
+        {
+          "primitive_ids": [
+            "P35",
+            "S35",
+            "V58",
+            "V51"
+          ],
+          "accretion_id": "n1",
+          "context_node_id": "n1",
+          "context": "殷商时期德指神秘力量与祖先祭祀的禀赋",
+          "period": "殷商",
+          "confidence": "auto",
+          "is_expert_gold": false
+        },
+        {
+          "primitive_ids": [
+            "P35",
+            "S06",
+            "V63",
+            "P39"
+          ],
+          "accretion_id": "n2",
+          "context_node_id": "n2",
+          "context": "西周德指政治品德与天命所归的统治正当性",
+          "period": "西周",
+          "confidence": "auto",
+          "is_expert_gold": false
+        },
+        {
+          "primitive_ids": [
+            "P35",
+            "S34",
+            "V33",
+            "B43"
+          ],
+          "accretion_id": "n3",
+          "context_node_id": "n3",
+          "context": "老子哲学中德是道衍生的本体无为境界",
+          "period": "春秋老子",
+          "confidence": "auto",
+          "is_expert_gold": false
+        },
+        {
+          "primitive_ids": [
+            "P35",
+            "R09",
+            "S34",
+            "V54"
+          ],
+          "accretion_id": "n4",
+          "context_node_id": "n4",
+          "context": "汉代以后德指个人的道德品质与伦理规范",
+          "period": "汉代以后",
+          "confidence": "auto",
+          "is_expert_gold": false
+        }
+      ],
+      "needs_expert_review": true
+    },
+    {
+      "concept": "气",
+      "k": 2,
+      "sui_triples": [
+        {
+          "primitive_ids": [
+            "R07",
+            "S06",
+            "S07"
+          ],
+          "accretion_id": "n1",
+          "context_node_id": "n1",
+          "context": "先秦气是自然哲学中的本原物质",
+          "period": "先秦",
+          "confidence": "auto",
+          "is_expert_gold": false
+        },
+        {
+          "primitive_ids": [
+            "B20",
+            "V27",
+            "V33",
+            "V63"
+          ],
+          "accretion_id": "n2",
+          "context_node_id": "n2",
+          "context": "中医气是气血运行中维持生命的物质基础",
+          "period": "中医",
+          "confidence": "auto",
+          "is_expert_gold": false
+        }
+      ],
+      "needs_expert_review": true
+    },
+    {
+      "concept": "仁",
+      "k": 2,
+      "sui_triples": [
+        {
+          "primitive_ids": [
+            "R09",
+            "B29"
+          ],
+          "accretion_id": "n1",
+          "context_node_id": "n1",
+          "context": "孔子仁是爱人推己及人的伦理核心",
+          "period": "春秋孔子",
+          "confidence": "auto",
+          "is_expert_gold": false
+        },
+        {
+          "primitive_ids": [
+            "P38",
+            "B28",
+            "B29",
+            "B43",
+            "V33"
+          ],
+          "accretion_id": "n2",
+          "context_node_id": "n2",
+          "context": "宋明仁被发展为心性本体论的宇宙生机",
+          "period": "宋明",
+          "confidence": "auto",
+          "is_expert_gold": false
+        }
+      ],
+      "needs_expert_review": true
+    }
+  ],
+  "ambiguity": [
+    {
+      "text": "孔德之容，惟道是从",
+      "concept": "德",
+      "sui_triple": {
+        "primitive_ids": [
+          "P35",
+          "S34",
+          "V33",
+          "B43"
+        ],
+        "accretion_id": "n1",
+        "context_node_id": "n1",
+        "context": "老子哲学中德是道衍生的本体无为境界",
+        "period": "春秋老子",
+        "confidence": "auto",
+        "is_expert_gold": false
+      },
+      "needs_expert_review": true
+    },
+    {
+      "text": "道可道非常道",
+      "concept": "道",
+      "sui_triple": {
+        "primitive_ids": [
+          "S34",
+          "Z09",
+          "V30",
+          "V54"
+        ],
+        "accretion_id": "n1",
+        "context_node_id": "n1",
+        "context": "老子道是宇宙本原不可言说之规律",
+        "period": "春秋老子",
+        "confidence": "auto",
+        "is_expert_gold": false
+      },
+      "needs_expert_review": true
+    },
+    {
+      "text": "仁者爱人",
+      "concept": "仁",
+      "sui_triple": {
+        "primitive_ids": [
+          "R09",
+          "B29"
+        ],
+        "accretion_id": "n1",
+        "context_node_id": "n1",
+        "context": "孔子仁是爱人之伦理核心",
+        "period": "春秋孔子",
+        "confidence": "auto",
+        "is_expert_gold": false
+      },
+      "needs_expert_review": true
+    }
+  ]
+}

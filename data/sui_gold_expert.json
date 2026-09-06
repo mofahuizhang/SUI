@@ -1,0 +1,522 @@
+{
+  "meta": {
+    "_DISCLAIMER": "本工具仅提供蒸馏流程骨架，专家标注/仲裁为人工环节，auto 数据未经 CDC 蒸馏前不得计入 SUI-Gold 专家基准，不用于 H-SUI-7 阈值评估。",
+    "name": "SUI-Gold Expert (CDC Ingest Skeleton Output)",
+    "bind": "SUI v4.6 §6.1 SUI 基准与验证体系（蒸馏骨架产物，非最终真值）",
+    "provenance": "cdc_ingest_skeleton",
+    "is_expert_gold_per_sample": true,
+    "cdc_distilled": false,
+    "honesty": "本工具仅提供蒸馏流程骨架，专家标注/仲裁为人工环节，auto 数据未经 CDC 蒸馏前不得计入 SUI-Gold 专家基准，不用于 H-SUI-7 阈值评估。",
+    "kappa_summary": {
+      "n_experts": 0,
+      "avg_kappa": "N/A",
+      "min_kappa": "N/A",
+      "reason": "单专家标注（或 auto 沿用），κ 需 ≥2 专家，无法计算。",
+      "pairs": []
+    },
+    "expert_target_recall": {
+      "基础层": 500,
+      "层累层": 2000,
+      "歧义层": 1000
+    },
+    "note": "本文件由蒸馏骨架产出：is_expert_gold=True 仅为下游格式占位；是否真正进入 SUI-Gold 专家基准取决于 cdc_distilled / needs_arbitration / final_sememes_source 等字段，且须由人工完成 CDC 蒸馏与仲裁。"
+  },
+  "samples": [
+    {
+      "sample_id": "base_水",
+      "layer": "基础层(base)",
+      "concept": "水",
+      "context": "水是一种无色无味的液体物质",
+      "period": "共时",
+      "auto_sememes": [
+        "S01",
+        "N01",
+        "B43"
+      ],
+      "expert_override": {
+        "sememes": null,
+        "node_id": null,
+        "period": null,
+        "note": null
+      },
+      "expert_annotations": {},
+      "final_sememes": [
+        "S01",
+        "N01",
+        "B43"
+      ],
+      "final_sememes_source": "auto_carryover",
+      "expert_source": "auto_carryover",
+      "is_expert_gold": true,
+      "cdc_distilled": false,
+      "needs_arbitration": false,
+      "kappa": "N/A"
+    },
+    {
+      "sample_id": "base_火",
+      "layer": "基础层(base)",
+      "concept": "火",
+      "context": "火是燃烧产生的光与热现象",
+      "period": "共时",
+      "auto_sememes": [
+        "S02",
+        "V33"
+      ],
+      "expert_override": {
+        "sememes": null,
+        "node_id": null,
+        "period": null,
+        "note": null
+      },
+      "expert_annotations": {},
+      "final_sememes": [
+        "S02",
+        "V33"
+      ],
+      "final_sememes_source": "auto_carryover",
+      "expert_source": "auto_carryover",
+      "is_expert_gold": true,
+      "cdc_distilled": false,
+      "needs_arbitration": false,
+      "kappa": "N/A"
+    },
+    {
+      "sample_id": "base_人",
+      "layer": "基础层(base)",
+      "concept": "人",
+      "context": "人是有理性的社会动物",
+      "period": "共时",
+      "auto_sememes": [
+        "R09",
+        "V46"
+      ],
+      "expert_override": {
+        "sememes": null,
+        "node_id": null,
+        "period": null,
+        "note": null
+      },
+      "expert_annotations": {},
+      "final_sememes": [
+        "R09",
+        "V46"
+      ],
+      "final_sememes_source": "auto_carryover",
+      "expert_source": "auto_carryover",
+      "is_expert_gold": true,
+      "cdc_distilled": false,
+      "needs_arbitration": false,
+      "kappa": "N/A"
+    },
+    {
+      "sample_id": "base_天",
+      "layer": "基础层(base)",
+      "concept": "天",
+      "context": "天是头顶上方的空间与自然界",
+      "period": "共时",
+      "auto_sememes": [
+        "S06",
+        "B01",
+        "S39",
+        "V38",
+        "Z17",
+        "R07",
+        "S07"
+      ],
+      "expert_override": {
+        "sememes": null,
+        "node_id": null,
+        "period": null,
+        "note": null
+      },
+      "expert_annotations": {},
+      "final_sememes": [
+        "S06",
+        "B01",
+        "S39",
+        "V38",
+        "Z17",
+        "R07",
+        "S07"
+      ],
+      "final_sememes_source": "auto_carryover",
+      "expert_source": "auto_carryover",
+      "is_expert_gold": true,
+      "cdc_distilled": false,
+      "needs_arbitration": false,
+      "kappa": "N/A"
+    },
+    {
+      "sample_id": "base_道",
+      "layer": "基础层(base)",
+      "concept": "道",
+      "context": "道是老子哲学中的宇宙本原与规律",
+      "period": "共时",
+      "auto_sememes": [
+        "S34",
+        "V54"
+      ],
+      "expert_override": {
+        "sememes": null,
+        "node_id": null,
+        "period": null,
+        "note": null
+      },
+      "expert_annotations": {},
+      "final_sememes": [
+        "S34",
+        "V54"
+      ],
+      "final_sememes_source": "auto_carryover",
+      "expert_source": "auto_carryover",
+      "is_expert_gold": true,
+      "cdc_distilled": false,
+      "needs_arbitration": false,
+      "kappa": "N/A"
+    },
+    {
+      "sample_id": "accr_德_n1",
+      "layer": "层累层(accretion)",
+      "concept": "德",
+      "context": "殷商时期德指神秘力量与祖先祭祀的禀赋",
+      "period": "殷商",
+      "auto_sememes": [
+        "P35",
+        "S35",
+        "V58",
+        "V51"
+      ],
+      "expert_override": {
+        "sememes": null,
+        "node_id": null,
+        "period": null,
+        "note": null
+      },
+      "expert_annotations": {},
+      "final_sememes": [
+        "P35",
+        "S35",
+        "V58",
+        "V51"
+      ],
+      "final_sememes_source": "auto_carryover",
+      "expert_source": "auto_carryover",
+      "is_expert_gold": true,
+      "cdc_distilled": false,
+      "needs_arbitration": false,
+      "kappa": "N/A"
+    },
+    {
+      "sample_id": "accr_德_n2",
+      "layer": "层累层(accretion)",
+      "concept": "德",
+      "context": "西周德指政治品德与天命所归的统治正当性",
+      "period": "西周",
+      "auto_sememes": [
+        "P35",
+        "S06",
+        "V63",
+        "P39"
+      ],
+      "expert_override": {
+        "sememes": null,
+        "node_id": null,
+        "period": null,
+        "note": null
+      },
+      "expert_annotations": {},
+      "final_sememes": [
+        "P35",
+        "S06",
+        "V63",
+        "P39"
+      ],
+      "final_sememes_source": "auto_carryover",
+      "expert_source": "auto_carryover",
+      "is_expert_gold": true,
+      "cdc_distilled": false,
+      "needs_arbitration": false,
+      "kappa": "N/A"
+    },
+    {
+      "sample_id": "accr_德_n3",
+      "layer": "层累层(accretion)",
+      "concept": "德",
+      "context": "老子哲学中德是道衍生的本体无为境界",
+      "period": "春秋老子",
+      "auto_sememes": [
+        "P35",
+        "S34",
+        "V33",
+        "B43"
+      ],
+      "expert_override": {
+        "sememes": null,
+        "node_id": null,
+        "period": null,
+        "note": null
+      },
+      "expert_annotations": {},
+      "final_sememes": [
+        "P35",
+        "S34",
+        "V33",
+        "B43"
+      ],
+      "final_sememes_source": "auto_carryover",
+      "expert_source": "auto_carryover",
+      "is_expert_gold": true,
+      "cdc_distilled": false,
+      "needs_arbitration": false,
+      "kappa": "N/A"
+    },
+    {
+      "sample_id": "accr_德_n4",
+      "layer": "层累层(accretion)",
+      "concept": "德",
+      "context": "汉代以后德指个人的道德品质与伦理规范",
+      "period": "汉代以后",
+      "auto_sememes": [
+        "P35",
+        "R09",
+        "S34",
+        "V54"
+      ],
+      "expert_override": {
+        "sememes": null,
+        "node_id": null,
+        "period": null,
+        "note": null
+      },
+      "expert_annotations": {},
+      "final_sememes": [
+        "P35",
+        "R09",
+        "S34",
+        "V54"
+      ],
+      "final_sememes_source": "auto_carryover",
+      "expert_source": "auto_carryover",
+      "is_expert_gold": true,
+      "cdc_distilled": false,
+      "needs_arbitration": false,
+      "kappa": "N/A"
+    },
+    {
+      "sample_id": "accr_气_n1",
+      "layer": "层累层(accretion)",
+      "concept": "气",
+      "context": "先秦气是自然哲学中的本原物质",
+      "period": "先秦",
+      "auto_sememes": [
+        "R07",
+        "S06",
+        "S07"
+      ],
+      "expert_override": {
+        "sememes": null,
+        "node_id": null,
+        "period": null,
+        "note": null
+      },
+      "expert_annotations": {},
+      "final_sememes": [
+        "R07",
+        "S06",
+        "S07"
+      ],
+      "final_sememes_source": "auto_carryover",
+      "expert_source": "auto_carryover",
+      "is_expert_gold": true,
+      "cdc_distilled": false,
+      "needs_arbitration": false,
+      "kappa": "N/A"
+    },
+    {
+      "sample_id": "accr_气_n2",
+      "layer": "层累层(accretion)",
+      "concept": "气",
+      "context": "中医气是气血运行中维持生命的物质基础",
+      "period": "中医",
+      "auto_sememes": [
+        "B20",
+        "V27",
+        "V33",
+        "V63"
+      ],
+      "expert_override": {
+        "sememes": null,
+        "node_id": null,
+        "period": null,
+        "note": null
+      },
+      "expert_annotations": {},
+      "final_sememes": [
+        "B20",
+        "V27",
+        "V33",
+        "V63"
+      ],
+      "final_sememes_source": "auto_carryover",
+      "expert_source": "auto_carryover",
+      "is_expert_gold": true,
+      "cdc_distilled": false,
+      "needs_arbitration": false,
+      "kappa": "N/A"
+    },
+    {
+      "sample_id": "accr_仁_n1",
+      "layer": "层累层(accretion)",
+      "concept": "仁",
+      "context": "孔子仁是爱人推己及人的伦理核心",
+      "period": "春秋孔子",
+      "auto_sememes": [
+        "R09",
+        "B29"
+      ],
+      "expert_override": {
+        "sememes": null,
+        "node_id": null,
+        "period": null,
+        "note": null
+      },
+      "expert_annotations": {},
+      "final_sememes": [
+        "R09",
+        "B29"
+      ],
+      "final_sememes_source": "auto_carryover",
+      "expert_source": "auto_carryover",
+      "is_expert_gold": true,
+      "cdc_distilled": false,
+      "needs_arbitration": false,
+      "kappa": "N/A"
+    },
+    {
+      "sample_id": "accr_仁_n2",
+      "layer": "层累层(accretion)",
+      "concept": "仁",
+      "context": "宋明仁被发展为心性本体论的宇宙生机",
+      "period": "宋明",
+      "auto_sememes": [
+        "P38",
+        "B28",
+        "B29",
+        "B43",
+        "V33"
+      ],
+      "expert_override": {
+        "sememes": null,
+        "node_id": null,
+        "period": null,
+        "note": null
+      },
+      "expert_annotations": {},
+      "final_sememes": [
+        "P38",
+        "B28",
+        "B29",
+        "B43",
+        "V33"
+      ],
+      "final_sememes_source": "auto_carryover",
+      "expert_source": "auto_carryover",
+      "is_expert_gold": true,
+      "cdc_distilled": false,
+      "needs_arbitration": false,
+      "kappa": "N/A"
+    },
+    {
+      "sample_id": "amb_德_0",
+      "layer": "歧义层(ambiguity)",
+      "concept": "德",
+      "context": "老子哲学中德是道衍生的本体无为境界",
+      "period": "春秋老子",
+      "auto_sememes": [
+        "P35",
+        "S34",
+        "V33",
+        "B43"
+      ],
+      "expert_override": {
+        "sememes": null,
+        "node_id": null,
+        "period": null,
+        "note": null
+      },
+      "expert_annotations": {},
+      "final_sememes": [
+        "P35",
+        "S34",
+        "V33",
+        "B43"
+      ],
+      "final_sememes_source": "auto_carryover",
+      "expert_source": "auto_carryover",
+      "is_expert_gold": true,
+      "cdc_distilled": false,
+      "needs_arbitration": false,
+      "kappa": "N/A"
+    },
+    {
+      "sample_id": "amb_道_1",
+      "layer": "歧义层(ambiguity)",
+      "concept": "道",
+      "context": "老子道是宇宙本原不可言说之规律",
+      "period": "春秋老子",
+      "auto_sememes": [
+        "S34",
+        "Z09",
+        "V30",
+        "V54"
+      ],
+      "expert_override": {
+        "sememes": null,
+        "node_id": null,
+        "period": null,
+        "note": null
+      },
+      "expert_annotations": {},
+      "final_sememes": [
+        "S34",
+        "Z09",
+        "V30",
+        "V54"
+      ],
+      "final_sememes_source": "auto_carryover",
+      "expert_source": "auto_carryover",
+      "is_expert_gold": true,
+      "cdc_distilled": false,
+      "needs_arbitration": false,
+      "kappa": "N/A"
+    },
+    {
+      "sample_id": "amb_仁_2",
+      "layer": "歧义层(ambiguity)",
+      "concept": "仁",
+      "context": "孔子仁是爱人之伦理核心",
+      "period": "春秋孔子",
+      "auto_sememes": [
+        "R09",
+        "B29"
+      ],
+      "expert_override": {
+        "sememes": null,
+        "node_id": null,
+        "period": null,
+        "note": null
+      },
+      "expert_annotations": {},
+      "final_sememes": [
+        "R09",
+        "B29"
+      ],
+      "final_sememes_source": "auto_carryover",
+      "expert_source": "auto_carryover",
+      "is_expert_gold": true,
+      "cdc_distilled": false,
+      "needs_arbitration": false,
+      "kappa": "N/A"
+    }
+  ]
+}
