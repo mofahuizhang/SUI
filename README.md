@@ -33,8 +33,9 @@ SUI/
 ├─ CHANGELOG.md                       ← 版本变更记录
 ├─ CITATION.cff                       ← 学术引用格式
 ├─ docs/
-│  ├─ SUI-v6.7-full.md                ← 最新版语言规范（v6.7，2026-08-27）
-│  ├─ SUI-full-download.md            ← 完整版下载（含全部附录与命题登记表）
+│  ├─ SUI-v6.11-full.md               ← 最新版语言规范（v6.11，2026-10-29）
+│  ├─ SUI-v6.7-full.md                ← 历史版本（v6.7，2026-08-27）
+│  ├─ SUI-full-download.md            ← 完整版下载（当前 v6.11 全文）
 │  └─ absorption-reports/
 │     └─ 三论-SUI-外部对标理论TRID吸收报告.md
 ├─ scripts/
