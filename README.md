@@ -30,25 +30,17 @@ SUI 在自然语言与模型推理之间插入一层**形式化语义地址**：
 SUI/
 ├─ README.md                          ← 本文件
 ├─ LICENSE                            ← 双许可（代码木兰PSL-2.0 / 文本CC BY-NC 4.0+商业授权）
-├─ CHANGELOG.md                       ← 版本变更记录
 ├─ CITATION.cff                       ← 学术引用格式
 ├─ docs/
-│  ├─ SUI-v6.11-full.md               ← 最新版语言规范（v6.11，2026-10-29）
-│  ├─ SUI-v6.7-full.md                ← 历史版本（v6.7，2026-08-27）
-│  ├─ SUI-full-download.md            ← 完整版下载（当前 v6.11 全文）
-│  └─ absorption-reports/
-│     └─ 三论-SUI-外部对标理论TRID吸收报告.md
+│  └─ SUI-语义寻址语言.md             ← 语言规范全文
 ├─ scripts/
 │  ├─ sui_accretion_builder.py        ← 语义增量构建器（语境态更新与地址锁存）
 │  └─ sui_gold_synth.py               ← 黄金数据集合成器
-├─ data/
-│  ├─ sui_gold_coldstart.json         ← 黄金冷启动数据集
-│  ├─ sui_gold_coldstart.md           ← 冷启动数据说明
-│  ├─ sui_gold_expert.json            ← 黄金专家数据集
-│  └─ sui_gold_expert.md              ← 专家数据说明
-└─ archive/
-   └─ old-versions/
-      └─ SUI-语义寻址语言-v6.6.md     ← 历史版本
+└─ data/
+   ├─ sui_gold_coldstart.json         ← 黄金冷启动数据集
+   ├─ sui_gold_coldstart.md           ← 冷启动数据说明
+   ├─ sui_gold_expert.json            ← 黄金专家数据集
+   └─ sui_gold_expert.md              ← 专家数据说明
 ```
 
 ---
@@ -122,13 +114,10 @@ with open("data/sui_gold_coldstart.json", "r", encoding="utf-8") as f:
 
 ---
 
-## 版本
+## 口径
 
-- **当前版本**：v6.7（2026-08-27）
-- **三论对齐**：上游 CART v4.0 / CCT v4.0 / CSMT 4.0-A 齐步对齐波及登记
-- **SSOT 命题登记表**：274 行（随上游维持）
-
-详见 [CHANGELOG.md](./CHANGELOG.md)。
+- **语言规范**：四层语义寻址编码结构（义原 ID／层累链 ID／语义树 ID／语境态），24 bit 地址布局。
+- **命题口径**：SSOT 命题登记表 274 行，随上游三论维持；引用条数须标注来源。
 
 ---
 

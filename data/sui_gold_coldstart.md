@@ -1,6 +1,6 @@
 # SUI-Gold 冷启动数据合成集（NOT EXPERT GOLD）
 
-- 绑定：SUI v4.6 §6.1 SUI基准与验证体系（冷启动占位，非专家Gold）
+- 绑定：SUI §6.1 基准与验证体系（冷启动占位，非专家Gold）
 - provenance：auto_synth ｜ is_expert_gold：False
 - 专家目标规模：{'基础层': 500, '层累层': 2000, '歧义层': 1000}
 - 声明：本数据集仅供编译器/评估流程冷启动跑通；须经双/三/五专家CDC蒸馏后方可称为 SUI-Gold 真值集。

@@ -4,7 +4,7 @@
 
 > ⚠️ 本工具仅提供蒸馏流程骨架，专家标注/仲裁为人工环节，auto 数据未经 CDC 蒸馏前不得计入 SUI-Gold 专家基准，不用于 H-SUI-7 阈值评估。
 
-- 绑定：SUI v4.6 §6.1 SUI 基准与验证体系（蒸馏骨架产物，非最终真值）
+- 绑定：SUI §6.1 基准与验证体系（蒸馏骨架产物，非最终真值）
 - provenance：cdc_ingest_skeleton ｜ is_expert_gold(占位)=True ｜ cdc_distilled=False
 - 专家目标规模：{'基础层': 500, '层累层': 2000, '歧义层': 1000}
 - 声明：本文件由蒸馏骨架产出：is_expert_gold=True 仅为下游格式占位；是否真正进入 SUI-Gold 专家基准取决于 cdc_distilled / needs_arbitration / final_sememes_source 等字段，且须由人工完成 CDC 蒸馏与仲裁。
